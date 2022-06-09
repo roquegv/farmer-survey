@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include armando_app *.css
+recursive-include armando_app *.csv
+recursive-include armando_app *.html
+recursive-include armando_app *.ico
+recursive-include armando_app *.js
+recursive-include armando_app *.json
+recursive-include armando_app *.md
+recursive-include armando_app *.png
+recursive-include armando_app *.py
+recursive-include armando_app *.svg
+recursive-include armando_app *.txt
+recursive-exclude armando_app *.pyc
