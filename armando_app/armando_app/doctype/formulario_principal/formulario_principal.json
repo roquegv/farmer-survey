@@ -1,13 +1,51 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "FP.#####",
  "creation": "2022-06-09 09:26:40.484249",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "fecha",
-  "lugar"
+  "lugar",
+  "distrito",
+  "column_break_4",
+  "finca",
+  "propietario",
+  "section_break_6",
+  "ubicacion",
+  "section_break_8",
+  "foto_adjunta_1",
+  "foto_1",
+  "foto_adjunta_2",
+  "foto_2",
+  "column_break_11",
+  "foto_adjunta_3",
+  "foto_3",
+  "foto_adjunta_4",
+  "foto_4",
+  "section_break_13",
+  "a_quien_vende_sus_frutas",
+  "column_break_21",
+  "cantidad_de_plantas_por_finca",
+  "column_break_23",
+  "cantidad_por_planta",
+  "cantidad_por_planta_otro",
+  "estado_actual_de_las_plantas_observadas_en_el_sitio_section",
+  "con_alguna_enfermedad_o_plaga",
+  "cuantos_anos_tienen_las_plantas_mas_viejas",
+  "column_break_22",
+  "cuando_fue_la_ultima_vez_que_planto",
+  "cuantas_plantas",
+  "precio_de_venta_section",
+  "por_fruta",
+  "por_bolsa",
+  "column_break_28",
+  "por_planta",
+  "por_peso",
+  "section_break_29",
+  "cuantas_plantas_se_anima_a_planta_y_cuidar"
  ],
  "fields": [
   {
@@ -19,11 +57,194 @@
    "fieldname": "lugar",
    "fieldtype": "Data",
    "label": "Lugar"
+  },
+  {
+   "fieldname": "distrito",
+   "fieldtype": "Data",
+   "label": "Distrito"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "finca",
+   "fieldtype": "Data",
+   "label": "Finca"
+  },
+  {
+   "fieldname": "propietario",
+   "fieldtype": "Data",
+   "label": "Propietario"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ubicacion",
+   "fieldtype": "Geolocation",
+   "label": "Ubicaci\u00f3n"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "foto_adjunta_1",
+   "fieldtype": "Attach Image",
+   "label": "Foto adjunta 1"
+  },
+  {
+   "fieldname": "foto_1",
+   "fieldtype": "Image",
+   "label": "Foto 1",
+   "options": "foto_adjunta_1"
+  },
+  {
+   "fieldname": "foto_adjunta_2",
+   "fieldtype": "Attach Image",
+   "label": "Foto adjunta 2"
+  },
+  {
+   "fieldname": "foto_2",
+   "fieldtype": "Image",
+   "label": "Foto 2",
+   "options": "foto_adjunta_2"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "foto_adjunta_3",
+   "fieldtype": "Attach Image",
+   "label": "Foto adjunta 3",
+   "options": "foto_adjunta_3"
+  },
+  {
+   "fieldname": "foto_3",
+   "fieldtype": "Image",
+   "label": "Foto 3"
+  },
+  {
+   "fieldname": "foto_adjunta_4",
+   "fieldtype": "Attach Image",
+   "label": "Foto adjunta 4",
+   "options": "foto_adjunta_4"
+  },
+  {
+   "fieldname": "foto_4",
+   "fieldtype": "Image",
+   "label": "Foto 4"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "a_quien_vende_sus_frutas",
+   "fieldtype": "Select",
+   "label": "A quien vende sus frutas",
+   "options": "\nComprador directo"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cantidad_de_plantas_por_finca",
+   "fieldtype": "Select",
+   "label": "Cantidad de plantas por finca",
+   "options": "\nA- 0 a 3 plantas.\nB- 4 a 10 plantas.\nC- m\u00e1s de 10 plantas"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cantidad_por_planta",
+   "fieldtype": "Select",
+   "label": "Cantidad por planta",
+   "options": "\nA- 3 bolsas.\nB- 4 a 7 bolsas.\nC- 7 a 10 bolsas.\nD- m\u00e1s de 10 bolsas.\nOtro"
+  },
+  {
+   "depends_on": "eval: doc.cantidad_por_planta==\"Otro\"",
+   "fieldname": "cantidad_por_planta_otro",
+   "fieldtype": "Data",
+   "label": "Indicar cantidad por planta"
+  },
+  {
+   "fieldname": "estado_actual_de_las_plantas_observadas_en_el_sitio_section",
+   "fieldtype": "Section Break",
+   "label": "ESTADO ACTUAL DE LAS PLANTAS OBSERVADAS EN EL SITIO"
+  },
+  {
+   "fieldname": "con_alguna_enfermedad_o_plaga",
+   "fieldtype": "Data",
+   "label": "Con alguna enfermedad o plaga"
+  },
+  {
+   "fieldname": "cuantos_anos_tienen_las_plantas_mas_viejas",
+   "fieldtype": "Data",
+   "label": "Cu\u00e1ntos a\u00f1os tiene las plantas m\u00e1s viejas"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cuando_fue_la_ultima_vez_que_planto",
+   "fieldtype": "Data",
+   "label": "Cuando fue la \u00faltima vez que planto"
+  },
+  {
+   "fieldname": "cuantas_plantas",
+   "fieldtype": "Data",
+   "label": "Cu\u00e1ntas plantas"
+  },
+  {
+   "fieldname": "precio_de_venta_section",
+   "fieldtype": "Section Break",
+   "label": "PRECIO DE VENTA"
+  },
+  {
+   "fieldname": "por_fruta",
+   "fieldtype": "Currency",
+   "label": "Por fruta (Gs)"
+  },
+  {
+   "fieldname": "por_bolsa",
+   "fieldtype": "Currency",
+   "label": "Por bolsa (Gs)"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "por_planta",
+   "fieldtype": "Currency",
+   "label": "Por planta (Gs)"
+  },
+  {
+   "fieldname": "por_peso",
+   "fieldtype": "Currency",
+   "label": "Por peso (Gs)"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cuantas_plantas_se_anima_a_planta_y_cuidar",
+   "fieldtype": "Data",
+   "label": "Cuantas plantas se anima a planta y cuidar"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-09 09:28:53.499880",
+ "modified": "2022-06-10 14:09:32.166690",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "Formulario Principal",
@@ -38,6 +259,29 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Coordinador",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operador",
    "share": 1,
    "write": 1
   }
