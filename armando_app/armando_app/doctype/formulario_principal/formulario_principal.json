@@ -119,24 +119,24 @@
   {
    "fieldname": "foto_adjunta_3",
    "fieldtype": "Attach Image",
-   "label": "Foto adjunta 3",
-   "options": "foto_adjunta_3"
+   "label": "Foto adjunta 3"
   },
   {
    "fieldname": "foto_3",
    "fieldtype": "Image",
-   "label": "Foto 3"
+   "label": "Foto 3",
+   "options": "foto_adjunta_3"
   },
   {
    "fieldname": "foto_adjunta_4",
    "fieldtype": "Attach Image",
-   "label": "Foto adjunta 4",
-   "options": "foto_adjunta_4"
+   "label": "Foto adjunta 4"
   },
   {
    "fieldname": "foto_4",
    "fieldtype": "Image",
-   "label": "Foto 4"
+   "label": "Foto 4",
+   "options": "foto_adjunta_4"
   },
   {
    "fieldname": "section_break_13",
@@ -244,7 +244,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-10 14:09:32.166690",
+ "modified": "2022-06-10 14:29:03.548102",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "Formulario Principal",
