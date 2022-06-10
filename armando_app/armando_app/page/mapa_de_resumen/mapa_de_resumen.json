@@ -4,13 +4,17 @@
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2022-06-10 08:44:34.780790",
+ "modified": "2022-06-10 10:52:27.474379",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "mapa-de-resumen",
  "owner": "Administrator",
  "page_name": "mapa-de-resumen",
- "roles": [],
+ "roles": [
+  {
+   "role": "Coordinador"
+  }
+ ],
  "script": null,
  "standard": "Yes",
  "style": null,
