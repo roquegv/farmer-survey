@@ -186,3 +186,14 @@ user_data_fields = [
 # Recommended only for DocTypes which have limited documents with untranslated names
 # For example: Role, Gender, etc.
 # translated_search_doctypes = []
+
+override_doctype_class = {
+    "CustomizeForm": "armando_app.overrides.overrides.CustomCustomizeForm"
+}
+
+fixtures = [
+	{
+		"dt": "Role",
+		"filters": [["name", "in", ("Coordinador", "Operador")]]
+	}
+]
