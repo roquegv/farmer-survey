@@ -45,22 +45,29 @@
   "por_planta",
   "por_peso",
   "section_break_29",
-  "cuantas_plantas_se_anima_a_planta_y_cuidar"
+  "cuantas_plantas_se_anima_a_planta_y_cuidar",
+  "datos_del_operador_section",
+  "usuario_del_operador",
+  "column_break_42",
+  "nombre_del_operador"
  ],
  "fields": [
   {
    "fieldname": "fecha",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Fecha"
   },
   {
    "fieldname": "lugar",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Lugar"
   },
   {
    "fieldname": "distrito",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Distrito"
   },
   {
@@ -70,11 +77,13 @@
   {
    "fieldname": "finca",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Finca"
   },
   {
    "fieldname": "propietario",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Propietario"
   },
   {
@@ -240,11 +249,33 @@
    "fieldname": "cuantas_plantas_se_anima_a_planta_y_cuidar",
    "fieldtype": "Data",
    "label": "Cuantas plantas se anima a planta y cuidar"
+  },
+  {
+   "fieldname": "datos_del_operador_section",
+   "fieldtype": "Section Break",
+   "label": "Datos del operador"
+  },
+  {
+   "fieldname": "usuario_del_operador",
+   "fieldtype": "Link",
+   "label": "Usuario del Operador",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nombre_del_operador",
+   "fieldtype": "Data",
+   "label": "Nombre del Operador",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-10 14:29:03.548102",
+ "modified": "2022-06-13 14:39:52.599875",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "Formulario Principal",
