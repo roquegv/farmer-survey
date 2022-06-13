@@ -1,5 +1,5 @@
 {
- "category": "Places",
+ "category": "Modules",
  "charts": [],
  "creation": "2022-06-10 11:20:18.619476",
  "developer_mode_only": 0,
@@ -13,7 +13,7 @@
  "is_standard": 1,
  "label": "Datos de Pomelo",
  "links": [],
- "modified": "2022-06-10 11:54:30.045638",
+ "modified": "2022-06-13 14:07:51.234204",
  "modified_by": "roque@example.com",
  "module": "Armando App",
  "name": "Datos de Pomelo",
