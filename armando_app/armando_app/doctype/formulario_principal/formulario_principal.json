@@ -53,6 +53,7 @@
  ],
  "fields": [
   {
+   "default": "Today",
    "fieldname": "fecha",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -277,7 +278,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-14 10:12:35.802597",
+ "modified": "2022-06-14 11:51:12.969856",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "Formulario Principal",
@@ -311,6 +312,7 @@
    "create": 1,
    "email": 1,
    "export": 1,
+   "if_owner": 1,
    "print": 1,
    "read": 1,
    "report": 1,
