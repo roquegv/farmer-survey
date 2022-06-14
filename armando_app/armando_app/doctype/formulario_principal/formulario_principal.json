@@ -66,9 +66,10 @@
   },
   {
    "fieldname": "distrito",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Distrito"
+   "label": "Distrito",
+   "options": "\nChore\nLiberaci\u00f3n\nSanta Rosa del Aguaray\nSan Pedro Ycuamandiy\u00fa\nSan Vicente\nNueva Germania\nGeneral Resqu\u00edn\nAntequera\nLima\nSan Pablo\nGral. Aquino"
   },
   {
    "fieldname": "column_break_4",
@@ -93,7 +94,8 @@
   {
    "fieldname": "ubicacion",
    "fieldtype": "Geolocation",
-   "label": "Ubicaci\u00f3n"
+   "label": "Ubicaci\u00f3n",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_8",
@@ -102,7 +104,8 @@
   {
    "fieldname": "foto_adjunta_1",
    "fieldtype": "Attach Image",
-   "label": "Foto adjunta 1"
+   "label": "Foto de la casa",
+   "reqd": 1
   },
   {
    "fieldname": "foto_1",
@@ -113,7 +116,7 @@
   {
    "fieldname": "foto_adjunta_2",
    "fieldtype": "Attach Image",
-   "label": "Foto adjunta 2"
+   "label": "Foto del \u00e1rbol"
   },
   {
    "fieldname": "foto_2",
@@ -128,7 +131,7 @@
   {
    "fieldname": "foto_adjunta_3",
    "fieldtype": "Attach Image",
-   "label": "Foto adjunta 3"
+   "label": "Foto de la fruta"
   },
   {
    "fieldname": "foto_3",
@@ -139,7 +142,7 @@
   {
    "fieldname": "foto_adjunta_4",
    "fieldtype": "Attach Image",
-   "label": "Foto adjunta 4"
+   "label": "Foto del productor y sus pomelos"
   },
   {
    "fieldname": "foto_4",
@@ -153,9 +156,8 @@
   },
   {
    "fieldname": "a_quien_vende_sus_frutas",
-   "fieldtype": "Select",
-   "label": "A quien vende sus frutas",
-   "options": "\nComprador directo"
+   "fieldtype": "Data",
+   "label": "A quien vende sus frutas"
   },
   {
    "fieldname": "column_break_21",
@@ -275,7 +277,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-13 14:39:52.599875",
+ "modified": "2022-06-14 10:12:35.802597",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "Formulario Principal",
