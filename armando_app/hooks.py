@@ -197,3 +197,11 @@ fixtures = [
 		"filters": [["name", "in", ("Coordinador", "Operador")]]
 	}
 ]
+
+app_include_js = "/assets/armando_app/js/scripts.js"
+
+# on_login = "armando_app.overrides.methods.on_login"
+
+doctype_js = {
+    "Formulario Principal": "public/js/scripts.js",
+}

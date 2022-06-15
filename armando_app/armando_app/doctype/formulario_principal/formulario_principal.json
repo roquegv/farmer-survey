@@ -49,7 +49,8 @@
   "datos_del_operador_section",
   "usuario_del_operador",
   "column_break_42",
-  "nombre_del_operador"
+  "nombre_del_operador",
+  "amended_from"
  ],
  "fields": [
   {
@@ -274,11 +275,21 @@
   {
    "fieldname": "column_break_42",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Formulario Principal",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2022-06-14 11:51:12.969856",
+ "modified": "2022-06-15 11:30:30.496798",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "Formulario Principal",
@@ -294,6 +305,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
@@ -306,6 +318,7 @@
    "report": 1,
    "role": "Coordinador",
    "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
@@ -318,6 +331,7 @@
    "report": 1,
    "role": "Operador",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
