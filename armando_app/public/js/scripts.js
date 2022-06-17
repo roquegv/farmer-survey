@@ -7,6 +7,15 @@ var route_to_new_doc = function(){
 
 $(document).on("startup", function () {
     route_to_new_doc()
+
+    $(".dropdown-notifications").hide()
+
+    frappe.db.count('Formulario Principal', {
+        filters: {'usuario_del_operador': frappe.user.name}
+    }).then(r=>{
+        var indicator = `<p id="count_indicator" style="background: var(--bg-orange);color: var(--text-on-orange); padding: 10px; border-radius: 50%;">${r}</p>`
+        $(".dropdown-navbar-user").before(`<li class="nav-item">${indicator}<li>`)
+    })
 });
 
 frappe.ui.form.on("Formulario Principal", {
