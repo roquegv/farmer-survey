@@ -15,6 +15,7 @@ frappe.pages['mapa-de-resumen'].refresh = function(wrapper) {
 				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 			}).addTo(map);
 	
+			var geometry;
 			frappe.db.get_list("Formulario Principal", {
 				fields: ["name", "ubicacion", "fecha", "lugar", "distrito", "finca", "propietario"]
 			}).then(r => {
@@ -23,14 +24,19 @@ frappe.pages['mapa-de-resumen'].refresh = function(wrapper) {
 					var ubi = element.ubicacion
 					if (ubi){
 						ubi = JSON.parse(ubi)
-						if (ubi.features[0].geometry.type === "Point"){
+						if (ubi.type === "Feature"){
+							geometry = ubi.geometry
+						}else{
+							geometry = ubi.features[0].geometry
+						}
+						if (geometry.type === "Point"){
 							popup_content = `Fecha: ${element.fecha || ""}<br>
 											Lugar: ${element.lugar || ""}<br>
 											Distrito: ${element.distrito || ""}<br>
 											Finca: ${element.finca || ""}<br>
 											Propietario: ${element.propietario || ""}<br>
 											<a href="/app/formulario-principal/${element.name}">Enlace</a>`
-							L.marker(ubi.features[0].geometry.coordinates.reverse()).addTo(map).bindPopup(popup_content)
+							L.marker(geometry.coordinates.reverse()).addTo(map).bindPopup(popup_content)
 						}
 					}
 				});
