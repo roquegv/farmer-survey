@@ -23,6 +23,7 @@ frappe.ui.form.on('Formulario Principal', {
     			var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
     			var marker = L.marker(latlng, {id:"ubicacion_marker", draggable:'true'})
     			frm.set_value("ubicacion", JSON.stringify(marker.toGeoJSON()))
+				frm.set_value("ubicacion_original", JSON.stringify(marker.toGeoJSON()))
     		})
 		}
 		

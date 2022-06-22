@@ -15,6 +15,7 @@
   "propietario",
   "section_break_6",
   "ubicacion",
+  "ubicacion_original",
   "section_break_8",
   "foto_adjunta_1",
   "foto_1",
@@ -284,12 +285,18 @@
    "options": "Formulario Principal",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "ubicacion_original",
+   "fieldtype": "Data",
+   "label": "Ubicaci\u00f3n Original",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-06-21 18:23:13.805897",
+ "modified": "2022-06-22 10:06:08.706797",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "Formulario Principal",
