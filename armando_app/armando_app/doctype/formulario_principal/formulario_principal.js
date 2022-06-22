@@ -33,6 +33,11 @@ frappe.ui.form.on('Formulario Principal', {
     			frm.set_value("ubicacion", JSON.stringify(marker.toGeoJSON()))
 				frm.set_value("ubicacion_original", JSON.stringify(marker.toGeoJSON()))
     		})
+		}else{
+			frm.add_custom_button("Confirmar", () => {
+				var local_docname = frappe.model.make_new_doc_and_get_name('Formulario Principal')
+				frappe.set_route('Form', 'Formulario Principal', local_docname)
+			})
 		}
 		
 		$(".btn-attach").click(() => {
@@ -87,7 +92,7 @@ frappe.ui.form.on('Formulario Principal', {
 		}
 	},
 
-	on_submit: function(frm){
+	after_save: function(frm){
 		frappe.db.count('Formulario Principal', {
 			filters: {'usuario_del_operador': frappe.user.name}
 		}).then(r=>{

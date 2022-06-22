@@ -297,7 +297,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-06-22 18:13:33.513349",
+ "modified": "2022-06-22 19:02:49.920233",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "Formulario Principal",
@@ -345,7 +345,6 @@
    "report": 1,
    "role": "Operador",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
