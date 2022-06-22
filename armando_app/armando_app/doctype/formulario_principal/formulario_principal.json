@@ -289,6 +289,7 @@
   {
    "fieldname": "ubicacion_original",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Ubicaci\u00f3n Original",
    "read_only": 1
   }
@@ -296,7 +297,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-06-22 10:06:08.706797",
+ "modified": "2022-06-22 10:28:18.034292",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "Formulario Principal",
