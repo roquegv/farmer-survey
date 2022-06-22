@@ -55,7 +55,7 @@ frappe.ui.form.on('Formulario Principal', {
 		frm.set_df_property("foto_adjunta_1", "reqd", 1)
 		frm.set_df_property("foto_adjunta_2", "reqd", 1)
 		frm.set_df_property("foto_adjunta_3", "reqd", 1)
-		frm.set_df_property("foto_adjunta_4", "reqd", 1)
+		// frm.set_df_property("foto_adjunta_4", "reqd", 1)
 		frm.set_df_property("a_quien_vende_sus_frutas", "reqd", 1)
 		frm.set_df_property("cantidad_de_plantas_por_finca", "reqd", 1)
 		frm.set_df_property("cantidad_por_planta", "reqd", 1)
