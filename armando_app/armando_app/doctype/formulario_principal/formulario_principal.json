@@ -178,7 +178,7 @@
   {
    "fieldname": "cantidad_por_planta",
    "fieldtype": "Select",
-   "label": "Cantidad por planta",
+   "label": "Producci\u00f3n por planta",
    "options": "\nA- 3 bolsas.\nB- 4 a 7 bolsas.\nC- 7 a 10 bolsas.\nD- m\u00e1s de 10 bolsas.\nOtro"
   },
   {
@@ -289,7 +289,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-06-15 11:30:30.496798",
+ "modified": "2022-06-21 18:23:13.805897",
  "modified_by": "Administrator",
  "module": "Armando App",
  "name": "Formulario Principal",

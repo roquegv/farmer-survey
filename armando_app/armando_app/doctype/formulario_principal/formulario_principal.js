@@ -36,6 +36,30 @@ frappe.ui.form.on('Formulario Principal', {
                 }
             }, 300)
         })
+
+		frm.set_df_property("fecha", "reqd", 1)
+		frm.set_df_property("lugar", "reqd", 1)
+		frm.set_df_property("distrito", "reqd", 1)
+		frm.set_df_property("finca", "reqd", 1)
+		frm.set_df_property("propietario", "reqd", 1)
+		frm.set_df_property("ubicacion", "reqd", 1)
+		frm.set_df_property("foto_adjunta_1", "reqd", 1)
+		frm.set_df_property("foto_adjunta_2", "reqd", 1)
+		frm.set_df_property("foto_adjunta_3", "reqd", 1)
+		frm.set_df_property("foto_adjunta_4", "reqd", 1)
+		frm.set_df_property("a_quien_vende_sus_frutas", "reqd", 1)
+		frm.set_df_property("cantidad_de_plantas_por_finca", "reqd", 1)
+		frm.set_df_property("cantidad_por_planta", "reqd", 1)
+		// frm.set_df_property("cantidad_por_planta_otro", "reqd", 1)
+		frm.set_df_property("con_alguna_enfermedad_o_plaga", "reqd", 1)
+		frm.set_df_property("cuantos_anos_tienen_las_plantas_mas_viejas", "reqd", 1)
+		frm.set_df_property("cuando_fue_la_ultima_vez_que_planto", "reqd", 1)
+		frm.set_df_property("cuantas_plantas", "reqd", 1)
+		frm.set_df_property("por_fruta", "reqd", 1)
+		frm.set_df_property("por_bolsa", "reqd", 1)
+		frm.set_df_property("por_planta", "reqd", 1)
+		frm.set_df_property("por_peso", "reqd", 1)
+		frm.set_df_property("cuantas_plantas_se_anima_a_planta_y_cuidar", "reqd", 1)
 	},
 
 	on_submit: function(frm){
