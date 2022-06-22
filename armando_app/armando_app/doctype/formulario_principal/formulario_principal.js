@@ -70,13 +70,13 @@ frappe.ui.form.on('Formulario Principal', {
 		frm.set_df_property("por_peso", "reqd", 1)
 		frm.set_df_property("cuantas_plantas_se_anima_a_planta_y_cuidar", "reqd", 1)
 
-		// map.eachLayer((layer) => {
-		// 	if (layer instanceof L.Marker){
-		// 		layer.remove();
-		// 	}
-		// });
-		// var geojson = JSON.parse(frm.doc.ubicacion)
-		// L.geoJSON(geojson).addTo(map);
+		map.eachLayer((layer) => {
+			if (layer instanceof L.Marker){
+				layer.remove();
+			}
+		});
+		var geojson = JSON.parse(frm.doc.ubicacion)
+		L.geoJSON(geojson).addTo(map);
 		frm.refresh_field("ubicacion")
 
 		if (frm.doc.docstatus == 1){
