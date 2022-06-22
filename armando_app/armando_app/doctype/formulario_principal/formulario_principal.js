@@ -12,8 +12,16 @@ frappe.ui.form.on('Formulario Principal', {
 		$(".leaflet-draw-draw-circle").remove()
 		$(".leaflet-draw-draw-circlemarker").remove()
 		$(".leaflet-draw-draw-marker").remove()
-		$(".leaflet-draw-edit-edit").remove()
+		// $(".leaflet-draw-edit-edit").remove()
 		$(".leaflet-draw-edit-remove").remove()
+
+		$(".leaflet-draw-edit-edit").attr("title", "Editar ubicación")
+		$(".leaflet-draw-edit-edit").click(function(){
+			$("a[title='Save changes']").attr("title", "Guardar cambios").text("Guardar")
+			$("a[title='Cancel editing, discards all changes']").attr("title", "Cancelar edición").text("Cancelar")
+			$("span:contains('Click cancel to undo changes.')").text("Click en cancelar para deshacer cambios")
+			$("span:contains('Drag handles or markers to edit features.')").text("Arrastrar puntos para editar ubicación")
+		})
 		
 		if (frm.is_new()) {
 		    frm.set_value("usuario_del_operador", frappe.user.name)
