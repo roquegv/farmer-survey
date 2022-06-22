@@ -18,8 +18,8 @@ $(document).on("startup", function () {
     })
 });
 
-frappe.ui.form.on("Formulario Principal", {
-    on_submit: function(frm){
-        route_to_new_doc()
-    }
-});
+// frappe.ui.form.on("Formulario Principal", {
+//     on_submit: function(frm){
+//         route_to_new_doc()
+//     }
+// });
