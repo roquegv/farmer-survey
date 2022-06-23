@@ -46,9 +46,11 @@ frappe.ui.form.on('Formulario Principal', {
             setTimeout(()=>{
                 $(".btn-modal-secondary").hide()
                 if ($(".btn-file-upload").length == 4){
-                    $(".btn-file-upload").first().remove()
-                    $(".btn-file-upload").first().remove()
-                    $(".btn-file-upload").first().remove()
+                    // $(".btn-file-upload").first().remove()
+                    // $(".btn-file-upload").first().remove()
+                    // $(".btn-file-upload").first().remove()
+					$(".btn-file-upload").eq(1).hide()
+					$(".btn-file-upload").eq(2).hide()
                 }
             }, 300)
         })
