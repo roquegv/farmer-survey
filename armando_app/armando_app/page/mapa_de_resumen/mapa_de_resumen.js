@@ -17,7 +17,8 @@ frappe.pages['mapa-de-resumen'].refresh = function(wrapper) {
 	
 			var geometry;
 			frappe.db.get_list("Formulario Principal", {
-				fields: ["name", "ubicacion", "fecha", "lugar", "distrito", "finca", "propietario"]
+				fields: ["name", "ubicacion", "fecha", "lugar", "distrito", "finca", "propietario"],
+				limit: 3000
 			}).then(r => {
 				var popup_content = ""
 				r.forEach(element => {
